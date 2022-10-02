@@ -128,3 +128,28 @@ const list = document.querySelectorAll(".list");
 list.forEach((el) => {
   window.onload = dragOver(el, ".list:not(.dragging)");
 });
+//HÀM ĐẶT LẠI BACKGROUND-COLOR CHO CÁC COURSE SAU KHI DI CHUYỂN
+function setEnrollIn() {
+  const listCourse = document.querySelector(".list-course").childNodes;
+  const list = [];
+  for (let i = 0; i < listCourse.length; i++) {
+    if (listCourse[i].nodeName !== "#text") {
+      list.push(listCourse[i]);
+    }
+  }
+  list.forEach((el) => {
+    el.classList.value = "course";
+  });
+  const listCourseRegister = document.querySelector(
+    ".list-course-register"
+  ).childNodes;
+  const listRegister = [];
+  for (let i = 0; i < listCourseRegister.length; i++) {
+    if (listCourseRegister[i].nodeName !== "#text") {
+      listRegister.push(listCourseRegister[i]);
+    }
+  }
+  listRegister.forEach((el) => {
+    el.classList.value = "course enroll";
+  });
+}
