@@ -8,7 +8,7 @@ function btn() {
     if (el == this) el.classList.toggle("on");
   });
 }
-
+//CHUYỂN MÔN HỌC NHỜ BUTTON
 //chuyển sang phải
 const right = document.querySelector(".right");
 right.addEventListener("click", changeRight);
@@ -58,6 +58,23 @@ function changeToLeft() {
     if (el.classList.contains("enroll")) {
       listCourse.appendChild(el);
       el.classList.remove("enroll");
+    }
+  });
+}
+//ẨN HIỆN CÁC MỤC NEWS CỦA SIDE
+const caret = document.querySelectorAll(".news");
+caret.forEach((el) => {
+  el.addEventListener("click", hidBtn, false);
+});
+function hidBtn() {
+  caret.forEach((el) => {
+    if (el === this) {
+      const content = el.childNodes[3];
+      const name = el.childNodes[1];
+      content.classList.toggle("display");
+      name.classList.toggle("on");
+      const hid = el.childNodes[1].childNodes[1];
+      hid.classList.toggle("rotate");
     }
   });
 }
