@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <link rel="stylesheet" href="../jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link
+      rel="stylesheet"
+      href="../jquery-ui-1.13.2/jquery-ui.structure.min.css"
     />
+    <link rel="stylesheet" href="../jquery-ui-1.13.2/jquery-ui.theme.min.css" />
   </head>
   <body>
     <div class="main-screen">
@@ -28,36 +34,36 @@
           <div class="profile">
             <div class="row">
               <label for="id">Mã số: &nbsp</label>
-              <input type="text" name="id" />
+              <input type="text" id="id" />
             </div>
             <div class="row">
               <label for="full-name">Họ và tên: &nbsp</label>
-              <input type="text" name="full-name" />
+              <input type="text" id="full-name" />
             </div>
             <div class="row">
               <label for="address">Địa chỉ: &nbsp</label>
-              <input type="text" name="address" />
+              <input type="text" id="address" />
             </div>
             <div class="row">
               <label for="phone">Điện thoại: &nbsp</label>
-              <input type="text" name="phone" />
+              <input type="text" id="phone" />
             </div>
             <div class="row">
               <label for="gender">Giới tính: &nbsp</label>
               <div class="wrap">
-                <input type="radio" name="gender" id="male" />
+                <input type="radio" class="gender" id="male" checked />
                 <label for="male">Nam &nbsp</label>
-                <input type="radio" name="gender" id="female" />
+                <input type="radio" class="gender" id="female" />
                 <label for="female">Nữ </label>
               </div>
             </div>
             <div class="row">
               <label for="date-time">Ngày sinh: &nbsp</label>
-              <input type="date" name="date-time" />
+              <input type="date" id="date-time" />
             </div>
             <div class="row">
               <label for="email">Email: &nbsp</label>
-              <input type="text" name="email" />
+              <input type="text" id="email" />
             </div>
           </div>
           <div class="register">
@@ -126,8 +132,8 @@
         <side class="side">
           <div class="news" draggable="true">
             <div class="name">
-              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
-              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              <span class="ui-icon ui-icon-triangle-1-s hid"></span>
+              <span class="ui-icon ui-icon-arrow-2-n-s rang"></span>
               News 01
             </div>
             <div class="content">
@@ -137,8 +143,8 @@
           </div>
           <div class="news" draggable="true">
             <div class="name">
-              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
-              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              <span class="ui-icon ui-icon-triangle-1-s hid"></span>
+              <span class="ui-icon ui-icon-arrow-2-n-s rang"></span>
               News 02
             </div>
             <div class="content">
@@ -148,8 +154,8 @@
           </div>
           <div class="news" draggable="true">
             <div class="name">
-              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
-              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              <span class="ui-icon ui-icon-triangle-1-s hid"></span>
+              <span class="ui-icon ui-icon-arrow-2-n-s rang"></span>
               News 03
             </div>
             <div class="content">
@@ -159,8 +165,8 @@
           </div>
           <div class="news" draggable="true">
             <div class="name">
-              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
-              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              <span class="ui-icon ui-icon-triangle-1-s hid"></span>
+              <span class="ui-icon ui-icon-arrow-2-n-s rang"></span>
               News 04
             </div>
             <div class="content">
@@ -170,8 +176,8 @@
           </div>
           <div class="news" draggable="true">
             <div class="name">
-              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
-              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              <span class="ui-icon ui-icon-triangle-1-s hid"></span>
+              <span class="ui-icon ui-icon-arrow-2-n-s rang"></span>
               News 05
             </div>
             <div class="content">
