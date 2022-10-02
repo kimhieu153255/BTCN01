@@ -275,7 +275,7 @@ function enrollSuccess() {
   node.innerHTML = `<th>${id}</th>
   <th>${name}</th>
   <th>${gender}</th>
-  <th>${date[2]}/${date[1]}/${date[0]}</th>`;
+  <th>${date[1]}/${date[2]}/${date[0]}</th>`;
   document.querySelector("table").appendChild(node);
   alert("Các môn học đã đăng kí:\n" + message, false);
 }
