@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  height: max-content;
+}
+.main-screen {
+  max-width: 1200px;
+  margin: 10px auto;
+}
+header {
+  height: 6rem;
+  background-image: linear-gradient(to right, #53d2ef, #10bee4);
+  line-height: 6rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 1px #c5c5c5;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 4px #565353;
+  color: white;
+  letter-spacing: 2.5px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: #b5d4fb;
+  box-shadow: 5px 5px 5px 1px #c5c5c5;
+  border-radius: 5px;
+  transform: translateY(-50%);
+  height: 25px;
+  line-height: 25px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+main {
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #ffa917;
+  font-weight: 600;
+  border-bottom: 0.5px solid #9a9a9a;
+}
+side {
+  width: 360px;
+  height: 100%;
+  border-left: 0.1px dotted #3b84e8;
+  padding: 0 5px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto 400px;
+  margin-top: 5px;
+}
+label {
+  text-align: right;
+}
+.register {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
+  gap: 5px;
+  margin-top: 5px;
+}
+button {
+  width: 30px;
+  margin-bottom: 5px;
+  border-color: #ff8207;
+  border-radius: 5px;
+  background-color: white;
+}
+.buttons {
+  margin: auto 0;
+}
+.name-list-course {
+  text-align: right;
+  color: #ff8a07;
+  font-weight: 600;
+}
+.name-course-register {
+  color: #ff8a07;
+  font-weight: 600;
+}
+.list-course,
+.list-course-register {
+  border: 0.1px solid #cecece;
+  padding: 5px 10px;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+}
+.course {
+  padding: 5px;
+  border: 0.5px solid #cecece;
+  margin-bottom: 5px;
+  background-color: #f6f6f6;
+}
+.enrollIn,
+.eraese {
+  width: 70px;
+}
+.button-register {
+  align-self: center;
+  margin-top: 5px;
+}
+tr:nth-child(1) {
+  background-color: #ff8207;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #ffe2b1;
+}
+
+table {
+  margin-top: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 1.5em;
+  font-weight: 400;
+  background-color: #ffe1b1;
+  border: 0.5 solid #ffa007;
+  color: #ffa607;
+  box-shadow: 1px 1px 1px 1px #c5c5c5;
+  border-radius: 5px;
+}
+.news {
+  border: 0.5px solid #dddddd;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+.hid {
+  display: inline-block;
+  margin-right: 5px;
+  color: black;
+  transform: rotate(-90deg);
+}
+.rang {
+  color: black;
+  margin-right: 5px;
+}
+.name {
+  background-color: #ffd8b1;
+  color: #ff8207;
+  border: 0.5px solid #003eff;
+  box-sizing: content-box;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.rotate {
+  transform: rotate(0deg);
+}
+.content {
+  padding: 20px 25px;
+  display: none;
+}
+.display {
+  display: block;
+}
+
+.line {
+  background-color: #176bd7;
+  height: 0.1px;
+  border: 0;
+  margin: 5px;
+}
+.enroll {
+  background-color: #fffa90;
+}
+.on {
+  background-color: #f39814;
+  color: white;
+}
+
+span > a {
+  color: #ffa607;
+}
+.draggable.dragging {
+  opacity: 0.5;
+}
+li > a {
+  color: #1869d8;
+  text-shadow: -1px -1px 5px #85b5f7;
+}
+
+.link1:hover,
+.link1:active,
+.link2:hover,
+.link2:active,
+.link3:hover,
+.link3:active,
+.link4:hover,
+.link4:active,
+.link5:hover,
+.link5:active {
+  color: #ffd8b1;
+  text-shadow: -1px -1px 5px #ff962f;
+}
+.link1f:hover,
+.link1f:active,
+.link2f:hover,
+.link2f:active,
+.link3f:hover,
+.link3f:active,
+.link4f:hover,
+.link4f:active,
+.link5f:hover,
+.link5f:active {
+  color: #ffe1b1;
+  background-color: #ffa607;
+}
