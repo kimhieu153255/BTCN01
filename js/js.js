@@ -78,3 +78,44 @@ function hidBtn() {
     }
   });
 }
+//THAY ĐỔI VỊ TRÍ CÁC NEWS NHỜ KÉO THẢ CHUỘT
+const news = document.querySelectorAll(".news");
+const side = document.querySelector(".side");
+
+function dragStartEnd(e) {
+  e.forEach((draggable) => {
+    draggable.addEventListener("dragstart", () => {
+      console.log("start");
+      draggable.classList.add("dragging");
+    });
+    draggable.addEventListener("dragend", () => {
+      console.log("end");
+      draggable.classList.remove("dragging");
+      window.onload = setEnrollIn();
+    });
+  });
+}
+
+window.onload = dragStartEnd(news);
+function dragOver(container, str) {
+  container.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    const afterElement = getPosition(container, e.clientY, str);
+    const draggable = document.querySelector(".dragging");
+    if (afterElement == null) container.appendChild(draggable);
+    else container.insertBefore(draggable, afterElement);
+  });
+}
+window.onload = dragOver(side, ".news:not(.dragging)");
+function getPosition(container, y, str) {
+  const el = [...container.querySelectorAll(str)];
+  return el.reduce(
+    (near, child) => {
+      const container = child.getBoundingClientRect();
+      const set = y - container.top - container.height / 2;
+      if (set > near.offset && set < 0) return { offset: set, element: child };
+      else return near;
+    },
+    { offset: Number.NEGATIVE_INFINITY }
+  ).element;
+}
