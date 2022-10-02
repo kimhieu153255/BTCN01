@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../js/jquery-ui-1.13.2/jquery-ui.structure.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../js/jquery-ui-1.13.2/jquery-ui.theme.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-screen">
+      <header>Bài tập 1 - 20120474</header>
+      <nav>
+        <li><a href="#" class="link1">Menu 1</a></li>
+        <li><a href="#" class="link2">Menu 2</a></li>
+        <li><a href="#" class="link3">Menu 3</a></li>
+        <li><a href="#" class="link4">Menu 4</a></li>
+        <li><a href="#" class="link5">Menu 5</a></li>
+      </nav>
+      <hr class="line" />
+      <div class="container">
+        <main>
+          <h1>ĐĂNG KÍ HỌC PHẦN</h1>
+          <div class="profile">
+            <div class="row">
+              <label for="id">Mã số: &nbsp</label>
+              <input type="text" name="id" />
+            </div>
+            <div class="row">
+              <label for="full-name">Họ và tên: &nbsp</label>
+              <input type="text" name="full-name" />
+            </div>
+            <div class="row">
+              <label for="address">Địa chỉ: &nbsp</label>
+              <input type="text" name="address" />
+            </div>
+            <div class="row">
+              <label for="phone">Điện thoại: &nbsp</label>
+              <input type="text" name="phone" />
+            </div>
+            <div class="row">
+              <label for="gender">Giới tính: &nbsp</label>
+              <div class="wrap">
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Nam &nbsp</label>
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Nữ </label>
+              </div>
+            </div>
+            <div class="row">
+              <label for="date-time">Ngày sinh: &nbsp</label>
+              <input type="date" name="date-time" />
+            </div>
+            <div class="row">
+              <label for="email">Email: &nbsp</label>
+              <input type="text" name="email" />
+            </div>
+          </div>
+          <div class="register">
+            <div class="name-list-course">Các môn học</div>
+            <div></div>
+            <div class="name-course-register">Các môn học đã chọn</div>
+            <div class="list-course list">
+              <div class="course">Lập Trình Hướng Đối Tượng</div>
+              <div class="course">Cấu trúc dữ liệu</div>
+              <div class="course">Lập Trình Windows</div>
+              <div class="course">NM Công Nghệ Phần Mềm</div>
+              <div class="course">Trí Tuệ Nhân Tạo</div>
+              <div class="course">Phát Triển Ứng Dụng Web</div>
+              <div class="course">Cơ Sở Dữ Liệu</div>
+            </div>
+            <div class="buttons">
+              <button class="right">></button>
+              <button class="toRight">>></button>
+              <button class="left"><</button>
+              <button class="toLeft"><<</button>
+            </div>
+            <div class="list-course-register list">
+              <div class="course enroll">Nhập Môn Lập Trình</div>
+              <div class="course enroll">Kỹ Thuật Lập Trình</div>
+              <div class="course enroll">Lập Trình Ứng Dụng Web</div>
+            </div>
+          </div>
+          <div class="button-register">
+            <button class="enrollIn">Đăng ký</button>
+            <button class="eraese">Xóa hết</button>
+          </div>
+          <hr />
+          <table>
+            <tr>
+              <th style="width: 120px">Mã số</th>
+              <th style="width: 200px">Họ và tên</th>
+              <th style="width: 120px">Giới tính</th>
+              <th style="width: 200px">Ngày sinh</th>
+            </tr>
+            <tr>
+              <th>20120001</th>
+              <th>Nguyễn Thị A</th>
+              <th>Nữ</th>
+              <th>07/08/2002</th>
+            </tr>
+            <tr>
+              <th>20120123</th>
+              <th>Trần Văn C</th>
+              <th>Nam</th>
+              <th>12/24/2002</th>
+            </tr>
+            <tr>
+              <th>20120274</th>
+              <th>Lê Văn G</th>
+              <th>Nam</th>
+              <th>06/13/2002</th>
+            </tr>
+            <tr>
+              <th>20120634</th>
+              <th>Ngô Thị E</th>
+              <th>Nữ</th>
+              <th>10/10/2002</th>
+            </tr>
+          </table>
+        </main>
+        <side class="side">
+          <div class="news" draggable="true">
+            <div class="name">
+              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
+              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              News 01
+            </div>
+            <div class="content">
+              content content content content content content content content
+              content content content content content content
+            </div>
+          </div>
+          <div class="news" draggable="true">
+            <div class="name">
+              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
+              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              News 02
+            </div>
+            <div class="content">
+              content content content content content content content content
+              content content content content content content
+            </div>
+          </div>
+          <div class="news" draggable="true">
+            <div class="name">
+              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
+              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              News 03
+            </div>
+            <div class="content">
+              content content content content content content content content
+              content content content content content content
+            </div>
+          </div>
+          <div class="news" draggable="true">
+            <div class="name">
+              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
+              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              News 04
+            </div>
+            <div class="content">
+              content content content content content content content content
+              content content content content content content
+            </div>
+          </div>
+          <div class="news" draggable="true">
+            <div class="name">
+              <i class="fa fa-caret-down hid" aria-hidden="true"></i>
+              <i class="fa fa-arrows-v rang" aria-hidden="true"></i>
+              News 05
+            </div>
+            <div class="content">
+              content content content content content content content content
+              content content content content content content
+            </div>
+          </div>
+        </side>
+      </div>
+      <hr class="line" />
+      <footer>
+        <span>Copyright © Acker&nbsp&nbsp</span>
+        <span><a href="#" class="link1f">Menu 1</a> |&nbsp</span>
+        <span><a href="#" class="link2f">Menu 2</a> |&nbsp </span>
+        <span><a href="#" class="link3f">Menu 3</a> |&nbsp </span>
+        <span><a href="#" class="link4f">Menu 4</a> |&nbsp </span>
+        <span><a href="#" class="link5f">Menu 5</a></span>
+      </footer>
+    </div>
+    <script src="../js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+  </body>
+</html>
