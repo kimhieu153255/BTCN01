@@ -119,3 +119,12 @@ function getPosition(container, y, str) {
     { offset: Number.NEGATIVE_INFINITY }
   ).element;
 }
+//THIẾT LẬP KÉO THẢ CHUỘT CHO CÁC COURSE (NHƯNG CHƯA ĐỔI MÀU TRONG CÁC LIST)
+courses.forEach((el) => {
+  el.draggable = true;
+});
+window.onload = dragStartEnd(courses);
+const list = document.querySelectorAll(".list");
+list.forEach((el) => {
+  window.onload = dragOver(el, ".list:not(.dragging)");
+});
