@@ -1,15 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 12px;
   font-weight: 400;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
-
 body {
   width: 100%;
   height: max-content;
@@ -54,6 +52,7 @@ main {
   width: 840px;
   display: flex;
   flex-direction: column;
+  border-right: 0.1px dotted #3b84e8;
   padding: 0 5px;
 }
 h1 {
@@ -66,7 +65,6 @@ h1 {
 side {
   width: 360px;
   height: 100%;
-  border-left: 0.1px dotted #3b84e8;
   padding: 0 5px;
 }
 
@@ -126,12 +124,12 @@ button {
   align-self: center;
   margin-top: 5px;
 }
+tr:nth-child(odd) {
+  background-color: #ffe2b1;
+}
 tr:nth-child(1) {
   background-color: #ff8207;
   color: white;
-}
-tr:nth-child(even) {
-  background-color: #ffe2b1;
 }
 
 table {
@@ -156,13 +154,11 @@ footer {
 }
 .hid {
   display: inline-block;
-  margin-right: 5px;
   color: black;
   transform: rotate(-90deg);
 }
 .rang {
   color: black;
-  margin-right: 5px;
 }
 .name {
   background-color: #ffd8b1;
@@ -175,7 +171,13 @@ footer {
 }
 .rotate {
   transform: rotate(0deg);
+  color: white;
 }
+
+.white {
+  color: white;
+}
+
 .content {
   padding: 20px 25px;
   display: none;
@@ -234,4 +236,8 @@ li > a {
 .link5f:active {
   color: #ffe1b1;
   background-color: #ffa607;
+}
+.borderError {
+  background-color: #ff7e7e;
+  border-color: red;
 }
